@@ -493,3 +493,66 @@ body {
     gap: 18px;
   }
 }
+
+/* Laptop / pantallas medianas */
+@media (max-width: 1200px) {
+  .hero {
+    padding: 25px 60px;
+    gap: 40px;
+  }
+
+  .hero-content h2 {
+    font-size: 56px;
+  }
+
+  .btn {
+    font-size: 26px;
+    padding: 14px 22px;
+  }
+}
+
+/* Pantallas tipo laptop / tablet horizontal */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 30px 40px;
+    gap: 30px;
+  }
+
+  .hero-content h2 {
+    font-size: 52px;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    max-width: 380px;
+  }
+
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 520px;
+  }
+}
+
+/* Laptops (1366px aprox / pantallas medianas) */
+@media (max-width: 1400px) {
+  .hero {
+    padding: 30px 60px;
+    gap: 40px;
+  }
+
+  .hero-content h2 {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  .hero-image img {
+    max-width: 600px;
+  }
+}
