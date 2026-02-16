@@ -3,83 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>semana cinco</title>
-    <!-- link de bt -->
+    <title>Belle y Bear</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <!-- link css -->
-    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="text-center">
-      <h1 class="text-center bg-danger p-3 m-2">hola mundo !</h1>
-      <h2>otro h2</h2>
+    <div class="promo-bar">
+      <p>✨ Free shipping on orders over $50 ✨</p>
     </div>
 
-    <!-- ejemplo de grillas de BT -->
-    <!-- container o containerfluid- -->
-    <!-- filas (row) -->
-    <!-- columnas (col) -->
+    <!-- Header -->
+    <header>
+      <!-- navbar componente de BT
+       navbar expand md: el menu esta expandido en desktop y colapsa en mobile (menu hamburguesa) -->
+      <nav class="navbar navbar-expand-md">
+        <!-- container centra el contenido -->
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Bella &amp; Bear</a>
 
-    <header class="container bg-primary">
-      <div class="row">
-        <h2 class="col">logo</h2>
-        <nav class="navbar navbar-expand-lg col-sm-8 col-md-6">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+          <!-- el boton burgger -->
+           <!-- data-bs-toggle="collapse" le dice a Bootstrap: “esto abre/cierra algo”
+               data-bs-target="#mainNav" le dice: “abrí/cerrá el div con id mainNav” -->
+          <button
+          
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/shop.html">Shop</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Gift</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Find Your Ritual</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wholesale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/support.html">Support</a>
+              </li>
+            </ul>
+
+            <div class="d-flex gap-3">
+              <a class="nav-link" href="#" aria-label="Search">🔍</a>
+              <a class="nav-link" href="#" aria-label="Account">👤</a>
+              <a class="nav-link" href="#" aria-label="Cart">🛒</a>
             </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
-    <!-- script -->
+
+    <!-- main (contenido principal) -->
+    <main>
+      <!-- divicion derecha -->
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Soft rituals for everyday care.</h2>
+          <p>
+            Discover our whipped body butters and sugar scrubs. 100% Vegan,
+            Cruelty-Free, and deliciously scented.
+          </p>
+          <a href="paginas/shop.html" class="btn">SHOP NOW</a>
+        </div>
+
+        <!-- divicion izquierda -->
+        <div class="hero-image">
+          <img
+            src="imagenes/hero-product.png"
+            alt="Whipped body butter and sugar scrubs"
+          />
+          <!-- aca va la imagen -->
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer py-5">
+      <div class="container">
+        <div class="row">
+          <!-- columna de redes -->
+          <div class="col-md-4 text-center text-md-start">
+            <h5>Follow us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">Pinterest</a></li>
+            </ul>
+          </div>
+
+          <!-- columna de exploracion -->
+          <div class="col-md-4 text-center text-md-start">
+            <h5>Explore</h5>
+            <ul class="list-unstyled">
+              <li><a href="/paginas/shop.html">Shop</a></li>
+              <li><a href="#">Gift</a></li>
+              <li><a href="/paginas/support.html">Support</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+
+          <!-- columna de redireccion -->
+          <div class="col-md-4 text-center text-md-start">
+            <h5>Bella & Bear</h5>
+            <p>Soft rituals for everyday care.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
