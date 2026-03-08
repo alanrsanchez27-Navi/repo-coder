@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-/* PROMO BAR */
+/* Promo bar */
 
 .promo-bar {
   text-align: center;
@@ -21,7 +21,7 @@ body {
   }
 }
 
-/* HEADER */
+/* NAVBAR */
 
 .navbar {
   background-color: $color-principal;
@@ -30,17 +30,14 @@ body {
   .navbar-brand {
     color: $color-texto;
     font-size: 35px;
-    text-decoration: none;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: $color-texto;
     }
   }
 
   .nav-link {
     color: $color-texto;
-    text-decoration: none;
 
     &:hover {
       color: $color-hover-link;
@@ -56,114 +53,122 @@ body {
   }
 }
 
-/* HERO */
+/* Hero nuevo */
 
 .hero {
   display: flex;
   align-items: center;
-  background-color: $color-principal;
-  padding: 25px 255px;
   justify-content: space-between;
-  gap: 60px;
+  gap: 70px;
+  padding: 60px 80px 70px;
+  background-color: $color-principal;
 
   .hero-content {
-    max-width: 500px;
+    max-width: 520px;
 
     h2 {
-      font-size: 75px;
+      font-size: 72px;
+      line-height: 1.1;
       color: $color-texto;
       margin-bottom: 20px;
-      line-height: 1.4;
+      font-weight: normal;
     }
 
     p {
-      font-size: 25px;
+      font-size: 20px;
       color: $color-claro;
-      line-height: 1.9;
-      max-width: 420px;
+      line-height: 1.7;
+      margin-bottom: 28px;
     }
   }
 
-  .hero-image {
-    img {
-      width: 100%;
-      max-width: 720px;
-      height: auto;
-      border-radius: 80px;
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-      border: 3px solid $color-borde;
-      transition: transform 0.5s ease;
+  .hero-image img {
+    width: 100%;
+    max-width: 640px;
+    border-radius: 80px;
+    border: 3px solid $color-borde;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease;
 
-      &:hover {
-        transform: translateY(-10px);
-      }
+    &:hover {
+      transform: translateY(-8px);
     }
   }
 }
 
-/* BOTON */
+/* nuevo boton */
 
 .btn {
   display: inline-block;
-  text-decoration: none;
-  padding: 17px 30px;
+  padding: 16px 30px;
   background-color: $color-boton;
   color: white;
-  font-size: 40px;
+  font-size: 22px;
   font-weight: bold;
-  border-radius: 30px;
-  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  border-radius: 999px;
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 
   &:hover {
     background-color: $color-boton-hover;
-    transform: scale(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.18);
   }
 }
 
-/* SHOP */
-
-.shop-intro {
-  h2 {
-    font-size: 50px;
-    color: $color-texto;
-    font-weight: normal;
-    margin-bottom: 10px;
-  }
-
-  p {
-    color: $color-claro;
-    font-size: 18px;
-    max-width: 600px;
-    line-height: 1.4;
-  }
-}
+/* Shop style*/
 
 .shop-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 40px 50px;
-  margin-bottom: 50px;
+  padding: 50px 50px 30px;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+
+.shop-intro {
+  h2 {
+    font-size: 52px;
+    color: $color-texto;
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: $color-claro;
+    font-size: 18px;
+    max-width: 620px;
+    line-height: 1.6;
+  }
 }
 
 .shop-filters {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 12px;
 
   button {
-    background-color: transparent;
-    border: 1px solid $color-texto;
-    padding: 8px 20px;
-    border-radius: 5px;
+    background-color: white;
+    border: 1px solid $color-borde;
+    padding: 10px 18px;
+    border-radius: 999px;
     color: $color-texto;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
+
     transition: all 0.3s ease;
 
     &:hover {
       background-color: $color-texto;
       color: white;
+      border-color: $color-texto;
+      transform: translateY(-2px);
     }
   }
 }
@@ -171,33 +176,50 @@ body {
 .shop-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
-  padding: 0 50px 80px 50px;
+  gap: 30px;
+  padding: 0 50px 90px;
 }
 
 .product-card {
-  border: 1px solid $color-texto;
-  border-radius: 20px;
-  padding: 12px;
+  border: 1px solid $color-borde;
+  border-radius: 24px;
+  padding: 14px;
   background-color: $color-principal;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  h3 {
+    color: $color-texto;
+    font-size: 22px;
+    font-weight: normal;
+  }
 
   img {
     width: 100%;
-    height: auto;
-    border-radius: 15px;
+    height: 320px;
     object-fit: cover;
+    border-radius: 18px;
   }
 }
 
 .product-price {
   background-color: $color-texto;
   color: white;
-  padding: 12px 20px;
-  border-radius: 50px;
+  padding: 12px 18px;
+  border-radius: 999px;
 
   display: flex;
   justify-content: space-between;
@@ -205,26 +227,24 @@ body {
 
   h4 {
     margin: 0;
-    font-weight: normal;
+    font-size: 18px;
   }
 
   button {
-    background-color: transparent;
+    background: transparent;
     border: none;
     color: white;
     font-weight: bold;
-    font-size: 18px;
     cursor: pointer;
 
     &:hover {
-      transform: scale(1.1);
       color: #ffcccb;
-      transition: all 0.3s ease;
+      transform: scale(1.06);
     }
   }
 }
 
-/* SUPPORT */
+/* Support style */
 
 .contact-section {
   max-width: 800px;
@@ -245,11 +265,6 @@ body {
     font-size: 18px;
     line-height: 1.6;
   }
-}
-
-.contact-list {
-  margin-left: 20px;
-  margin-bottom: 40px;
 }
 
 .contact-form {
@@ -274,29 +289,20 @@ body {
     font-weight: bold;
     color: $color-texto;
     margin-bottom: 8px;
-    font-size: 14px;
   }
 
   input,
   select,
   textarea {
-    width: 100%;
     padding: 12px 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    font-size: 16px;
-    background-color: #fdfdfd;
 
     &:focus {
       outline: none;
       border-color: $color-texto;
     }
   }
-}
-
-.form-footer {
-  text-align: center;
-  margin-top: 20px;
 }
 
 .btn-submit {
@@ -307,7 +313,6 @@ body {
   border-radius: 30px;
   font-size: 18px;
   font-weight: bold;
-  cursor: pointer;
 
   &:hover {
     background-color: $color-boton-hover;
@@ -323,235 +328,57 @@ body {
 
   a {
     color: $color-texto;
-    text-decoration: none;
 
     &:hover {
       color: $color-hover-link;
     }
   }
+}
 
-  h5 {
-    font-weight: normal;
-    margin-bottom: 15px;
+/* responsive usando mixin*/
+
+@include laptop {
+  .hero {
+    padding: 50px 60px;
   }
 }
 
-/* RESPONSIVE */
-
-@media (max-width: 768px) {
+@include tablet {
   .hero {
-    flex-direction: column;
-    padding: 30px 20px;
-    gap: 25px;
+    gap: 40px;
 
-    .hero-content {
-      h2 {
-        font-size: 42px;
-      }
-
-      p {
-        font-size: 18px;
-      }
+    .hero-content h2 {
+      font-size: 56px;
     }
   }
 
-  .btn {
-    font-size: 18px;
-    padding: 12px 20px;
+  .shop-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include mobile {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .shop-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .shop-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px 60px;
   }
 
   .form-row {
     flex-direction: column;
-    gap: 15px;
   }
 
   .contact-form {
     padding: 20px;
-  }
-
-  .shop-grid {
-    grid-template-columns: 1fr;
-    padding: 0 20px 60px 20px;
-    gap: 25px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .hero {
-    padding: 30px 40px;
-    gap: 30px;
-
-    .hero-content h2 {
-      font-size: 52px;
-    }
-
-    .hero-image img {
-      max-width: 520px;
-    }
-  }
-
-  .shop-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 1400px) {
-  .hero {
-    padding: 30px 60px;
-    gap: 40px;
-
-    .hero-content h2 {
-      font-size: 60px;
-    }
-
-    .hero-image img {
-      max-width: 600px;
-    }
-  }
-}
-
-/* SHOP */
-
-.shop-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 40px 50px;
-  margin-bottom: 50px;
-}
-
-.shop-intro {
-  h2 {
-    font-size: 50px;
-    color: $color-texto;
-    font-weight: normal;
-    margin-bottom: 10px;
-  }
-
-  p {
-    color: $color-claro;
-    font-size: 18px;
-    max-width: 600px;
-    line-height: 1.4;
-    margin: 0;
-  }
-}
-
-.shop-filters {
-  display: flex;
-  gap: 10px;
-
-  button {
-    background-color: transparent;
-    border: 1px solid $color-texto;
-    padding: 8px 20px;
-    border-radius: 5px;
-    color: $color-texto;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: $color-texto;
-      color: white;
-    }
-  }
-}
-
-.shop-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
-  padding: 0 50px 80px 50px;
-}
-
-.product-card {
-  border: 1px solid $color-texto;
-  border-radius: 20px;
-  padding: 12px;
-  background-color: $color-principal;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-
-  h3 {
-    margin: 0;
-    color: $color-texto;
-    font-size: 22px;
-  }
-
-  img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 15px;
-    display: block;
-  }
-}
-
-.product-price {
-  background-color: $color-texto;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  h4 {
-    margin: 0;
-    font-weight: normal;
-  }
-
-  button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-
-    &:hover {
-      transform: scale(1.1);
-      color: #ffcccb;
-      transition: all 0.3s ease;
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-  .shop-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .shop-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 30px 20px;
-    margin-bottom: 30px;
-  }
-
-  .shop-intro {
-    h2 {
-      font-size: 38px;
-    }
-
-    p {
-      font-size: 16px;
-    }
-  }
-
-  .shop-grid {
-    grid-template-columns: 1fr;
-    padding: 0 20px 60px 20px;
-    gap: 25px;
-  }
-
-  .product-card img {
-    height: auto;
   }
 }
