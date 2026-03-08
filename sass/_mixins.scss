@@ -1,0 +1,14 @@
+//Tamaños en diferentes pantallas
+
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}

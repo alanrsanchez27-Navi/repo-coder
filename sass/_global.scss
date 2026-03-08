@@ -1,0 +1,38 @@
+body {
+  font-family: $fuente-principal;
+  color: $color-texto;
+  background-color: $color-principal;
+}
+
+header {
+  background-color: $color-acento;
+
+  .promo-bar {
+    @include flex-center;
+    padding: 10px;
+
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 40px;
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+@include tablet {
+  .hero {
+    padding: 20px;
+  }
+}
