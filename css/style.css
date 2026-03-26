@@ -324,5 +324,30 @@ body {
     padding: 20px;
   }
 }
+/* ABOUT STYLE! */
+.about-hero {
+  position: relative;
+  height: 600px;
+  background-image: url("../imagenes/About-image.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.about-hero .about-hero-content {
+  position: relative;
+  max-width: 600px;
+  margin-left: 80px;
+}
+.about-hero .about-hero-content h1 {
+  font-size: 56px;
+  color: #4b2e2e;
+  margin-bottom: 10px;
+}
+.about-hero .about-hero-content p {
+  font-size: 18px;
+  color: #6b4a4a;
+  line-height: 1.6;
+}
 
 /*# sourceMappingURL=style.css.map */
