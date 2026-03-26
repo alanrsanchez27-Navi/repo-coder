@@ -337,12 +337,6 @@ body {
     padding: 20px;
   }
 }
-.about-hero {
-  height: 260px;
-  background-position: center right;
-  background-size: cover;
-}
-
 /* ABOUT STYLE! */
 .about-hero {
   position: relative;
