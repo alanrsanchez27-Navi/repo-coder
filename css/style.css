@@ -456,13 +456,27 @@ body {
 }
 /* RITUAL PAGE */
 .ritual-hero {
-  background-color: #fdf3ee;
-  padding: 70px 20px;
+  background: linear-gradient(180deg, #fdf3ee 0%, rgb(254.6105263158, 252.6631578947, 251.6894736842) 100%);
+  padding: 80px 20px 70px;
+}
+.ritual-hero .ritual-eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background-color: white;
+  color: #6b4a4a;
+  font-size: 13px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  animation: fadeUp 0.7s ease forwards;
 }
 .ritual-hero h1 {
-  font-size: 52px;
+  font-size: 56px;
   color: #4b2e2e;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+  animation: fadeUp 0.9s ease forwards;
 }
 .ritual-hero p {
   font-size: 18px;
@@ -470,6 +484,7 @@ body {
   max-width: 620px;
   margin: 0 auto;
   line-height: 1.6;
+  animation: fadeUp 1.1s ease forwards;
 }
 
 .ritual-grid {
