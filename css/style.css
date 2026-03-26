@@ -600,6 +600,14 @@ body {
   transform: scale(1.05);
 }
 
+.footer-tagline {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6b4a4a;
+  max-width: 220px;
+  margin-left: auto;
+}
+
 /* NEW LOGO MOBILE Y TABLET */
 @media (max-width: 1024px) {
   .site-logo {
@@ -615,6 +623,12 @@ body {
 @media (max-width: 768px) {
   .footer-logo {
     height: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-tagline {
+    margin-left: 0;
+    text-align: center;
   }
 }
 

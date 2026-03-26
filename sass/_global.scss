@@ -720,6 +720,14 @@ body {
   }
 }
 
+.footer-tagline {
+  margin-top: 10px;
+  font-size: 14px;
+  color: $color-claro;
+  max-width: 220px;
+  margin-left: auto;
+}
+
 /* NEW LOGO MOBILE Y TABLET */
 @include tablet {
   .site-logo {
@@ -737,5 +745,12 @@ body {
 @include mobile {
   .footer-logo {
     height: 45px;
+  }
+}
+
+@include mobile {
+  .footer-tagline {
+    margin-left: 0;
+    text-align: center;
   }
 }
