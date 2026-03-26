@@ -412,3 +412,56 @@ body {
     }
   }
 }
+
+/* VALUES ICONOS STYLE */
+
+.about-values {
+  background-color: $color-values-bg;
+  padding: 60px 20px;
+
+  .value-item {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .value-icon {
+    width: 110px;
+    height: auto;
+    margin-bottom: 18px;
+    transition: transform 0.3s ease;
+  }
+
+  .value-item:hover .value-icon {
+    transform: scale(1.08);
+  }
+
+  h3 {
+    color: $color-texto;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  p {
+    color: $color-claro;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-values {
+    .value-icon {
+      width: 90px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

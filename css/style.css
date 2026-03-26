@@ -350,4 +350,47 @@ body {
   line-height: 1.6;
 }
 
+/* VALUES ICONOS STYLE */
+.about-values {
+  background-color: #dfeef1;
+  padding: 60px 20px;
+}
+.about-values .value-item {
+  text-align: center;
+  padding: 20px;
+}
+.about-values .value-icon {
+  width: 110px;
+  height: auto;
+  margin-bottom: 18px;
+  transition: transform 0.3s ease;
+}
+.about-values .value-item:hover .value-icon {
+  transform: scale(1.08);
+}
+.about-values h3 {
+  color: #4b2e2e;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.about-values p {
+  color: #6b4a4a;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .about-values .value-icon {
+    width: 90px;
+  }
+  .about-values h3 {
+    font-size: 20px;
+  }
+  .about-values p {
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
