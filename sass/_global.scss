@@ -383,6 +383,12 @@ body {
   }
 }
 
+.about-hero {
+  height: 260px;
+  background-position: center right;
+  background-size: cover;
+}
+
 /* ABOUT STYLE! */
 
 .about-hero {
@@ -519,5 +525,13 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@include mobile {
+  .about-hero {
+    height: 250px;
+    background-position: right center;
+    background-size: cover;
   }
 }

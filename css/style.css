@@ -324,6 +324,12 @@ body {
     padding: 20px;
   }
 }
+.about-hero {
+  height: 260px;
+  background-position: center right;
+  background-size: cover;
+}
+
 /* ABOUT STYLE! */
 .about-hero {
   position: relative;
@@ -439,6 +445,13 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .about-hero {
+    height: 250px;
+    background-position: right center;
+    background-size: cover;
   }
 }
 
